@@ -109,9 +109,23 @@ public class RateActivity<msg> extends Activity implements Runnable {
     }
 
     public void onClick(View btn) {
-        Log.i(TAG,"onClick:");
+        Log.i(TAG, "onClick: ");
         String str = rmb.getText().toString();
-        int r = Integer.valueOf(String.valueOf(rmb)).intValue();
+        Log.i(TAG, "onClick: get str=" + str);
+
+        float r = 0;
+        if(str.length()>0){
+            r = Float.parseFloat(str);
+        }else{
+            //用户没有输入内容
+            Toast.makeText(this, "请输入内容", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        Log.i(TAG, "onClick: r=" + r);
+        Log.i(TAG,"onClick:");
+
+        //int r = Integer.valueOf(String.valueOf(rmb)).intValue();
         if(btn.getId()==R.id.btn_dollar){
             result.setText(String.valueOf(r*dollarRate));
         }else if(btn.getId()==R.id.btn_euro){
