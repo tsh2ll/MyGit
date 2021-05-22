@@ -33,7 +33,6 @@ public class RateActivity<msg> extends Activity implements Runnable {
     private float euroRate = 0.13f;
     private float wonRate = 175.27f;
     private final String TAG = "RateActivity";
-
     Handler handler;
     Document doc = null;
 
@@ -70,7 +69,7 @@ public class RateActivity<msg> extends Activity implements Runnable {
 
         String updateDate = sharedPreferences.getString("update_date","");
 
-        //开启子线程
+
         Log.i(TAG, "onCreate: sp updateDate=" + updateDate);
         Log.i(TAG, "onCreate: todayStr=" + todayStr);
 
@@ -188,6 +187,7 @@ public class RateActivity<msg> extends Activity implements Runnable {
         return out.toString();
     }
 
+
     public void run() {
         Log.i(TAG, "run:......");
 
@@ -252,6 +252,8 @@ public class RateActivity<msg> extends Activity implements Runnable {
         msg.obj = bundle;
         handler.sendMessage(msg);
     }
+
+
 }
 
 
