@@ -8,6 +8,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,6 +27,7 @@ import java.io.Reader;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class RateActivity<msg> extends Activity implements Runnable {
     EditText rmb;
@@ -135,17 +138,53 @@ public class RateActivity<msg> extends Activity implements Runnable {
     }
 
     public void openConfig(View btn) {
+        openConfig("dollar_key_rate", "euro_key_rate", "won_key_rate", 1);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.more,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if (item.getItemId() == R.id.menu_set){
+            openConfig("key_dollar", "key_euro", "key_won", 2);
+        } else if(item.getItemId() == R.id.open_list){
+            //打开列表窗口
+            Intent list = new Intent(this, RateListActivity.class);
+            startActivity(list);
+
+            //测试数据库
+            RateItem item1 = new RateItem("aaaa","123");
+           DBManager manager = new DBManager(this);
+            manager.add(item1);
+            manager.add(new RateItem("bbbb","23.5"));
+            Log.i(TAG, "onOptionsItemSelected: 写入数据完毕");
+
+            //查询所有数据
+            List<RateItem> testList = manager.listAll();
+            for(RateItem i : testList){
+                Log.i(TAG, "onOptionsItemSelected: 取出数据 [id= "+i.getId()+"]Name=" + i.getCurName() + "Rate=" + i.getCurRate());
+            }
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void openConfig(String key_dollar, String key_euro, String key_won, int i2) {
         Intent config = new Intent(this, ConfigActivity.class);
-        config.putExtra("dollar_key_rate", dollarRate);
-        config.putExtra("euro_key_rate", euroRate);
-        config.putExtra("won_key_rate", wonRate);
+        config.putExtra(key_dollar, dollarRate);
+        config.putExtra(key_euro, euroRate);
+        config.putExtra(key_won, wonRate);
 
         Log.i(TAG, "openOne: dollarRate=" + dollarRate);
         Log.i(TAG, "openOne: euroRate=" + euroRate);
         Log.i(TAG, "openOne: wonRate=" + wonRate);
 
-        //startActivity(config);
-        startActivityForResult(config, 1);
+        startActivityForResult(config, i2);
     }
 
     @Override
@@ -172,6 +211,7 @@ public class RateActivity<msg> extends Activity implements Runnable {
 
         super.onActivityResult(requestCode, resultCode, data);
     }
+
 
     private String inputStream2String(InputStream inputStream) throws IOException {
         final int bufferSize = 1024;

@@ -37,7 +37,6 @@ public class List3Activity extends AppCompatActivity {
 
         /*progressBar.setVisibility(View.GONE);
         ListView.setVisibility(View.VISIBLE);
-
         ArrayList<HashMap<String,String>>listItems=new ArrayList<HashMap<String,String>>();
         for(int i=0;i<10;i++){
             HashMap<String,String>map =new HashMap<String,String>();
@@ -108,7 +107,8 @@ public class List3Activity extends AppCompatActivity {
         startActivity(rateCalc);
     }
 
-   /* @Override
+
+    /*@Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Object itemAtPosition = listView.getItemAtPosition(position);
         HashMap<String, String> map = (HashMap<String, String>) itemAtPosition;
@@ -118,4 +118,5 @@ public class List3Activity extends AppCompatActivity {
         Log.i(TAG, "onItemClick:detailStr=" + detailStr);
 
     }*/
+
 }
