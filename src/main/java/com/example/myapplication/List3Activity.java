@@ -72,6 +72,7 @@ public class List3Activity extends AppCompatActivity {
                 super.handleMessage(msg);
             }
         };
+
         listView.setOnItemClickListener(this::onItemClick);
         MapTask task = new MapTask();
         task.setHandler(handler);

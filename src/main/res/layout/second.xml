@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFDFC"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="16dp"
+        android:paddingRight="5dp"
+        tools:layout_editor_absoluteX="-71dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="133dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:text="微信8.0"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付"
+            android:textColor="#030304"
+            android:textSize="25dp"
+            app:backgroundTint="#00FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="收藏"
+                android:textColor="#101010"
+                android:textSize="25dp"
+                app:backgroundTint="#00FFFFFF"
+                app:iconTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="朋友圈"
+                android:textColor="#030304"
+                android:textSize="25dp"
+                app:backgroundTint="#00FFFFFF" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="卡包"
+                android:textColor="#030304"
+                android:textSize="25dp"
+                app:backgroundTint="#00FFFFFF" />
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="表情"
+                android:textColor="#101010"
+                android:textSize="25dp"
+                app:backgroundTint="#00FFFFFF"
+                app:iconTint="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设置"
+                    android:textColor="#030304"
+                    android:textSize="25dp"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="130dp">
+
+                    <Button
+                        android:id="@+id/button27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="微信"
+                        android:textColor="#0B0A0A"
+                        app:backgroundTint="#FAFFFFFF" />
+
+                    <Button
+                        android:id="@+id/button28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="通讯录"
+                        android:textColor="#0B0A0A"
+                        app:backgroundTint="#F8FFFFFF" />
+
+                    <Button
+                        android:id="@+id/button29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="发现"
+                        android:textColor="#050505"
+                        app:backgroundTint="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/button30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="我"
+                        android:textColor="#070707"
+                        app:backgroundTint="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

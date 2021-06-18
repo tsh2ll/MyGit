@@ -150,7 +150,7 @@ public class RateActivity<msg> extends Activity implements Runnable {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         if (item.getItemId() == R.id.menu_set){
-            openConfig("key_dollar", "key_euro", "key_won", 2);
+
         } else if(item.getItemId() == R.id.open_list){
             //打开列表窗口
             Intent list = new Intent(this, RateListActivity.class);
@@ -174,7 +174,7 @@ public class RateActivity<msg> extends Activity implements Runnable {
         return super.onOptionsItemSelected(item);
     }
 
-    private void openConfig(String key_dollar, String key_euro, String key_won, int i2) {
+    private void openConfig(String key_dollar, String key_euro, String key_won, int i) {
         Intent config = new Intent(this, ConfigActivity.class);
         config.putExtra(key_dollar, dollarRate);
         config.putExtra(key_euro, euroRate);
@@ -184,7 +184,7 @@ public class RateActivity<msg> extends Activity implements Runnable {
         Log.i(TAG, "openOne: euroRate=" + euroRate);
         Log.i(TAG, "openOne: wonRate=" + wonRate);
 
-        startActivityForResult(config, i2);
+        startActivityForResult(config, 1);
     }
 
     @Override
