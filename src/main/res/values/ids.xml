@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="show" type="id" />
+    <item name="inp" type="id" />
+    <item name="btn" type="id" />
+    <item name="setText" type="id" />
+    <item name="celsius_to_fahren" type="id" />
+    <item name="et_input" type="id" />
+    <item name="tv_result" type="id" />
+    <item name="tv_title" type="id" />
+    <item name="score1" type="id" />
+    <item name="score" type="id" />
+    <item name="score2" type="id" />
+    <item name="editTextren" type="id" />
+    <item name="editTextmei" type="id" />
+    <item name="editTexthui" type="id" />
+    <item name="input_rmb" type="id" />
+    <item name="result" type="id" />
+    <item name="btnr1" type="id" />
+    <item name="btnr2" type="id" />
+    <item name="btnb3" type="id" />
+    <item name="btnb2" type="id" />
+</resources>

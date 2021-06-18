@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name" translatable="false">HELLO</string>
+
+
+    <string name="btn_reset_label">Reset</string>
+    <string name="btn3_label">+3 points</string>
+    <string name="btn2_label">+2 points</string>
+    <string name="btn1_label">+1 point</string>
+    <string name="tname_label">TeamA</string>
+
+
+    <string name="btn_reset_dollar" translatable="false">DOLLAR</string>
+    <string name="rmb_hint" translatable="false">请输入人民币金额</string>
+    <string name="btn_reset_euro" translatable="false">EURO</string>
+    <string name="btn_reset_won" translatable="false">WON</string>
+
+
+    <string name="newDollar" translatable="false">请输入新的美元汇率</string>
+    <string name="newEuro" translatable="false">请输入新的欧元汇率</string>
+    <string name="newWon" translatable="false">请输入新的韩元汇率</string>
+    <string name="save" translatable="false">save</string>
+
+    <string name="rmb_hint_label" translatable="false">请输入</string>
+
+    <string name="settings_title">配置页面</string>
+
+    <!-- 控件标签 -->
+    <string name="set_switch1_label">开关项</string>
+    <string name="set_checkbox1_label">复选项</string>
+    <string name="set_list_label">列表项</string>
+    <string name="set_text1_label">选项1</string>
+    <string name="set_text2_label">选项2</string>
+    <string name="set_group1_label">分组1</string>
+    <string name="set_group2_label">分组2</string>
+
+    <!-- 控件ID -->
+    <string name="set_switch1_key">set_switch1</string>
+    <string name="set_checkbox1_key">set_checkbox1</string>
+    <string name="set_list_key">set_list</string>
+    <string name="set_text1_key">set_text1</string>
+    <string name="set_text2_key">set_text2</string>
+</resources>
+

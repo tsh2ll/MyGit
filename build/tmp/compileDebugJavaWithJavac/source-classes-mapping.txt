@@ -1,0 +1,39 @@
+com/example/myapplication/List3Activity.java
+ com.example.myapplication.List3Activity
+ com.example.myapplication.List3Activity$1
+com/example/myapplication/ConfigActivity.java
+ com.example.myapplication.ConfigActivity
+com/example/myapplication/DBHelper.java
+ com.example.myapplication.DBHelper
+com/example/myapplication/RateActivity.java
+ com.example.myapplication.RateActivity
+ com.example.myapplication.RateActivity$1
+com/example/myapplication/DBManager.java
+ com.example.myapplication.DBManager
+com/example/myapplication/ItemData.java
+ com.example.myapplication.ItemData
+com/example/myapplication/MainActivity.java
+ com.example.myapplication.MainActivity
+com/example/myapplication/FirstListActivity.java
+ com.example.myapplication.FirstListActivity
+ com.example.myapplication.FirstListActivity$1
+com/example/myapplication/MyTask.java
+ com.example.myapplication.MyTask
+com/example/myapplication/RateCalcActivity.java
+ com.example.myapplication.RateCalcActivity
+ com.example.myapplication.RateCalcActivity$1
+com/example/myapplication/ScoreActivity.java
+ com.example.myapplication.ScoreActivity
+com/example/myapplication/MyAdapter.java
+ com.example.myapplication.MyAdapter
+com/example/myapplication/BuildConfig.java
+ com.example.myapplication.BuildConfig
+com/example/myapplication/RateItem.java
+ com.example.myapplication.RateItem
+com/example/myapplication/MapTask.java
+ com.example.myapplication.MapTask
+com/example/myapplication/RateListActivity.java
+ com.example.myapplication.RateListActivity
+ com.example.myapplication.RateListActivity$1
+com/example/myapplication/GridViewActivity.java
+ com.example.myapplication.GridViewActivity

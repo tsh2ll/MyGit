@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="show" type="id" />
+    <item name="inp" type="id" />
+    <item name="btn" type="id" />
+    <item name="setText" type="id" />
+    <item name="celsius_to_fahren" type="id" />
+</resources>
